@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: hsl(47,88%, 63%)
+}
+
+.card {
+    width: 340px;
+    background-color: white;
+    border-radius: 10px;
+    border-right: 8px solid black;
+    border-bottom: 8px solid black;
+    box-shadow: 20px 10px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+.image-container {
+    position: relative;
+    padding: 20px;
+    background-color: white;
+}
+#image {
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    display: block;
+}
+h2{
+    font-size: 16px;
+    background-color: hsl(47,88%, 63%);
+    text-align: center;
+    width: 80px;
+    margin-left: 22px;
+
+}
+.card-date{
+    font-size: small;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: 500;
+}
+.card-heading{
+    font-size: large;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: 800;
+}
+.card-description{ 
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 20px;
+
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds some space between the image and text */
+  }
+  
+  .image-avatar {
+    flex-shrink: 0; /* Prevents image from shrinking */
+  }
+  
+  .image-avatar img {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 20px; /* Adjust the size as needed */
+    height: 20px;
+    border-radius: 50%; /* Optional: makes the image circular */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    margin-bottom: 20px;
+}
+  
+  .text p{
+    flex: grow 1; /* Allows text to take up remaining space */
+    font-size: 10px;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+  
+.attribution{
+   position: absolute;
+   top: 700px;
+}
+
+body {
+    font-size: 16px;
+  }
+  
+  /* Larger screens - tablets and desktops */
+  @media (min-width: 768px) {
+    body {
+      font-size: 18px;
+    }
+  }
+  
+  @media (min-width: 1200px){
+    body {
+      font-size: 20px;
+  }}
